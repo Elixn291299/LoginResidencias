@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar sesión</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="IMG/Logos.jpg" alt="Logo">
+    </div>
+    <form action="login.php" method="post" onsubmit="return validateForm()">
+      <h1 class="access-heading">ACCESO</h1>
+      <div class="input-container">
+        <div class="icon-box">
+          <img src="IMG/Usuario.png" class="icon">
+        </div>
+        <input type="text" style="width: 300px;" name="no_control" placeholder="NUMERO DE CONTROL" maxlength="9" onkeyup="javascript:this.value=this.value.toUpperCase();" spellcheck="false" data-ms-editor="true" required>
+      </div>
+      
+      <div class="input-container">
+        <div class="icon-box">
+          <img src="IMG/contrasena.png" class="icon">
+        </div>
+        <input type="password" name="contrasena" placeholder="CONTRASEÑA" required>
+      </div>
+      
+      <input type="submit" value="Iniciar sesión" class="login-button">
+    </form>
+  </div>
+  
+  <script>
+    function validateForm() {
+      var noControl = document.forms[0].no_control.value;
+      var contrasena = document.forms[0].contrasena.value;
+      
+      if (noControl.trim() === "" || contrasena.trim() === "") {
+        alert("Por favor, complete todos los campos.");
+        return false;
+      }
+      
+      return true;
+    }
+  </script>
+</body>
+</html>

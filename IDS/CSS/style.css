@@ -1,0 +1,99 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+  }
+  
+  form {
+    width: 500px;
+    border: 10px solid #ccc;
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  .regresar {
+    color: white;
+}
+  
+  .access-heading {
+    text-align: center;
+    font-weight: lighter;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    background-color: #1B396A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .icon-box {
+    width: 30px;
+    height: 30px;
+    background-color: #1B396A;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .icon {
+    color: #fff;
+    width: 16px;
+    height: 16px;
+  }
+  
