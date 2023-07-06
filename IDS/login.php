@@ -18,7 +18,7 @@ try {
             $conn = new PDO("mysql:host=$servidor;dbname=$basededatos", $usuario, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $stmt = $conn->prepare("SELECT * FROM Clientes WHERE NO_CONTROL = :no_control AND CONTRASEÑA = :contrasena");
+            $stmt = $conn->prepare("SELECT * FROM Clientes WHERE NO_CONTROL = :no_control AND CONTRASENA = :contrasena");
             $stmt->bindParam(':no_control', $no_control);
             $stmt->bindParam(':contrasena', $contrasena);
             $stmt->execute();
